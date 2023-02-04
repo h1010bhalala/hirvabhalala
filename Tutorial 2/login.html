@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="EN">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+<!-- /login-section -->
+<section class="w3l-contact-2 py-5" id="contact">
+  <div class="container py-lg-5 py-md-4 py-2">
+    <h6 class="sub-hnytitle text-center">Welcome Back</h6>
+    <h3 class="w3l-hnytitle mb-md-5 mb-4 text-center">Stay tuned here</h3>
+      <div class="contact-grids d-grid">
+          <div class="contact-left-img">
+            <img src="login.svg" class="" alt="hfuodfotdfyd" style="height: 450px;">
+          </div>
+          <div class="contact-right">
+              <form action="login.html" method="post" class="signin-form">
+                  <div class="input-grids">
+                      <input type="email" name="w3lName" id="w3lName" placeholder="Username (Email)" class="contact-input" required="" />
+                      <input type="password" name="w3lSender" id="w3lSender" placeholder="Password" class="contact-input" required="" />
+                  </div>
+                  <button class="btn btn-style btn-success">Sign In</button>
+              </form>
+              <div style="margin-top: 20px;" class="text-center">
+                <h5 class="mb-md-5 mb-4" style="color: #6c757d;word-spacing: 1px;">Don't have an account then <a href="registration.html" class="reg_link">Sign Up</a> here</h5>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!-- //login-section -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
+
+  //Main navigation Active Class Add Remove
+  $(".navbar-toggler").on("click", function () {
+    $("header").toggleClass("active");
+  });
+  $(document).on("ready", function () {
+    if ($(window).width() > 991) {
+      $("header").removeClass("active");
+    }
+    $(window).on("resize", function () {
+      if ($(window).width() > 991) {
+        $("header").removeClass("active");
+      }
+    });
+  });
+</script>
+<!--//MENU-JS-->
+
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
